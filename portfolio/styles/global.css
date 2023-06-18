@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen&family=Oxygen+Mono&display=swap');
+@import '~@fortawesome/fontawesome-free/css/all.css';
+
+/* variables declared here - these are the colors for our pages, as well as the font stacks and sizes. */
+:root {
+    --black: #171321;
+    --dkblue: #0d314b;
+    --plum: #4b0d49;
+    --hotmag: #ff17e4;
+    --magenta: #e310cb;
+    --aqua: #86fbfb;
+    --white: #f7f8fa;
+    --font-size: 1.3rem;
+    --mono: "Oxygen mono", monospace;
+    --sans: Oxygen, sans-serif;
+}
+
+/* border box model: https://css-tricks.com/box-sizing/ */
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--sans);
+    background-color: var(--black);
+    color: var(--white);
+    font-size: var(--font-size);
+}
+
+h1, h2, h3 {
+    margin: 0;  
+}
+
+a {
+    color: var(--magenta);
+}
+
+a:hover {
+    color: var(--hotmag);
+    text-decoration: none;
+}
+
+#intro{
+    padding-bottom: 20rem;
+}
+
+#intro p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+#intro .name {
+    font-family: var(--mono);
+}
+
+.name span {
+    font-family: var(--sans);
+    display: block;
+    font-size: 4rem;
+    color: var(--aqua);
+}
+
+#intro h2 {
+    font-size: 4rem;
+    font-weight: normal;
+}
+
+#contact {
+    background-color: var(--plum);
+    width: 400px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 3rem 0;
+}
+
+#contact p:last-child {
+    margin-top: 3rem;
+}
+
+#contact p a{
+    color: --var(--hotmag);
+    font-size: 1.5rem;
+    border: 0.1rem solid var(--black);
+    border-radius: 0.5rem;
+    padding: 0.4rem;
+    background-color: var(--hotmag);
+    color: var(--white);
+    font-family: var(--mono);
+    text-decoration: none;
+}
+
+nav{
+    font-family: var(--mono); 
+    font-size: 80%;
+    padding: 1rem ;
+}
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+}
+nav h1 a {
+    font-family: var(--sans);
+}
+
+nav li:first-child{
+    flex-basis: 100%; 
+    text-align: center; 
+}
+nav a {
+    text-decoration: none;
+    color: var(--white);
+    display: block;
+}
+nav a:hover {
+    color: var(--magenta);
+}
+
+nav [class*="fa-"] {
+    font-size: 150%;
+    color: var(--aqua);
+}
+
+nav h1 [class*="fa-"] {
+    font-size: 100%;
+}
+
+nav [class*="fa-"]:hover {
+    color: var(--magenta);
+}
+/* nav ul li {
+    color: var(--white);
+} */
