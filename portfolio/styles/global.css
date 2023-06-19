@@ -49,7 +49,9 @@ a:hover {
 }
 
 #intro{
-    padding-bottom: 20rem;
+    padding: 4rem 1rem 10rem 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 #intro p {
@@ -74,7 +76,6 @@ a:hover {
 }
 
 #contact {
-    background-color: var(--plum);
     width: 400px;
     text-align: center;
     margin: 0 auto;
@@ -85,17 +86,6 @@ a:hover {
     margin-top: 3rem;
 }
 
-#contact p a{
-    color: --var(--hotmag);
-    font-size: 1.5rem;
-    border: 0.1rem solid var(--black);
-    border-radius: 0.5rem;
-    padding: 0.4rem;
-    background-color: var(--hotmag);
-    color: var(--white);
-    font-family: var(--mono);
-    text-decoration: none;
-}
 
 nav{
     font-family: var(--mono); 
@@ -143,6 +133,60 @@ nav h1 [class*="fa-"] {
 nav [class*="fa-"]:hover {
     color: var(--magenta);
 }
-/* nav ul li {
+
+.button{
+    background-color: var(--magenta);
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
     color: var(--white);
-} */
+    text-decoration: none;
+    font-family: var(--mono);
+}
+
+.button:hover{
+    background-color: var(--hotmag);
+    color: var(--white);
+}
+
+footer{
+    text-align: center;
+    padding: 4rem 0;
+}
+footer ul li{
+    list-style-type: none;
+}
+footer ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 3rem;
+
+    font-size: 3rem;
+    margin: 2rem 0;
+    padding: 0;
+}
+
+.test:hover{
+    color: var(--hotmag);
+}
+
+@media(min-width: 850px){
+    nav{
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    nav li:first-child{
+        flex-basis: auto;
+        text-align: left;
+        margin-right: auto;
+        padding-left: 12%;
+    }
+}
+
+.contact-section{
+    background-color: var(--plum);
+}
+.gradient{
+    background: linear-gradient(90deg, rgba(255,23,228,1) 0%, rgba(134,251,251,1) 100%);
+    height: 2px;
+}
