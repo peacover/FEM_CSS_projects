@@ -8,10 +8,10 @@ export const SectionOne = () => {
       <h2>I develop the web</h2>
       <p>I'm a developer specializing in Backend</p>
       <p>
-        Currently, I'm a student at{" "}
-        <a href="https://1337.ma" target="_blank">
-          1337 coding school
+        Currently, I'm a student at 
+        <a href="https://1337.ma" target="_blank"> 1337 coding school
         </a>
+        .
       </p>
     </section>
   );

@@ -76,7 +76,7 @@ a:hover {
 }
 
 #contact {
-    width: 400px;
+    max-width: 400px;
     text-align: center;
     margin: 0 auto;
     padding: 3rem 0;
@@ -169,6 +169,55 @@ footer ul {
 .test:hover{
     color: var(--hotmag);
 }
+.section-dkplum {
+    background-color: var(--dkblue);
+}
+
+#projects {
+    padding: 4rem 1rem;
+}
+#projects h2 {
+    font-size: 2.5rem;
+    margin-bottom: calc(2.5rem * 1.5)
+}
+#projects h3 {
+    color: var(--aqua);
+}
+#projects h4 {
+    font-size: 1rem;
+    font-family: var(--mono);
+    margin: 0;
+}
+.blackbox {
+    background-color: var(--black);
+    padding: 1rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 10px;
+    color: var(--white);
+}
+#projects ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    gap: 1rem;
+    font-size: 1rem;
+}
+#projects img {
+    margin: 2rem 0rem 4rem 0rem;
+    border-left: 1px solid var(--aqua);
+    border-top: 1px solid var(--aqua);
+    border-radius: 25px;
+    padding: 1rem;
+    width: 100%;
+}
+
+article {
+    margin: 1.5rem auto;
+}
 
 @media(min-width: 850px){
     nav{
@@ -180,6 +229,44 @@ footer ul {
         text-align: left;
         margin-right: auto;
         padding-left: 12%;
+    }
+}
+
+@media(min-width: 550px){
+    #projects{
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    article{
+        display: grid;
+        grid-template-columns: repeat(10, 1fr);
+        gap: 1rem;
+    }
+    .text{
+        order: 2;
+        text-align: right;
+        grid-column: 5/11;
+        grid-row: 1/2;
+    }
+
+    .reverse .text{
+        text-align: left;
+        grid-column: 1/7;
+        /* grid-row: 1/2; */
+    }
+    #projects ul {
+        justify-content: flex-end;
+    }
+    #projects .reverse ul {
+        justify-content: flex-start;
+    }
+    #projects img {
+        grid-column: 1/6;
+        grid-row: 1/2;
+    }
+    #projects .reverse img {
+        grid-column: 6/11;
+        grid-row: 1/2;
     }
 }
 
