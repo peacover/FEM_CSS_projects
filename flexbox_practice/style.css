@@ -99,20 +99,47 @@ section ul {
 }
 
 /* ///////////  OUR MISSION ///////////// */
-#mission{
-    margin-bottom: 3rem;
+#mission {
+  margin-bottom: 3rem;
 }
-.mission-img{
-    max-height: 100px;
-    display: block;
+.mission-img {
+  max-height: 100px;
+  display: block;
 }
-.p-mission{
-    
-    line-height: 1.7;
+.p-mission {
+  display: block;
+  line-height: 1.7;
 }
-/* section{
-    display: flex;
-} */
+/* //////////////// FOOTER ///////////////////// */
+.footer{
+  background-color: var(--color5);
+}
+footer{
+  padding: 3rem;
+  display: flex;
+  flex-flow: column wrap;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+footer ul{
+  list-style-type: none;
+  display: flex;
+  flex-flow: row nowrap;
+  /* gap: 15px; */
+  padding: 0;
+  margin: 0;
+}
+footer li{
+  margin-right: 1rem;
+}
+footer address{
+  font-weight: bold;
+  font-style: normal;
+  margin-top: 2rem;
+}
+footer h4{
+  margin-top: 0;
+}
 
 /* Initial mobile layout: a series of images stacked on top of each other with the figure caption over the image. */
 
@@ -130,6 +157,23 @@ section ul {
   }
   figure img {
     object-position: 0;
+  }
+  .mission-img {
+    float: left;
+    max-height: 211px;
+    shape-outside: polygon(35.84% 94.87%, 34.64% 87.05%, 51.64% 4.06%, 55.1% 2.38%);
+  }
+  .p-mission {
+    display: flow-root;
+    max-width: 900px;
+  }
+  footer{
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+  }
+  footer address{
+    margin-top: 0;
   }
 }
 
